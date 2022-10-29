@@ -43,7 +43,6 @@ public class Traject extends Mission{
         this.arrivalDate = arrivalDate;
     }
 
-
     public List<Bon> getBons() {
         return bons;
     }
@@ -63,14 +62,22 @@ public class Traject extends Mission{
                 '}';
     }
 
+
     /*
      * @params : no parameters
      * @return : an integer, the sum of the price of every paid bon of this trajectory.
-     * */
+     *
+     */
     @Override
     public int cout() {
         return bons.stream().reduce(0, (sum, bon) -> sum + bon.getCout(), Integer::sum ) ;
+    }
 
+
+
+    @Override
+    public void view() {
+        System.out.println(this.toString());
     }
 }
 

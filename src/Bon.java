@@ -14,10 +14,5 @@ public class Bon {
         this.cout = cout;
     }
 
-    @Override
-    public String toString() {
-        return "Bon{" +
-                "cout=" + cout +
-                '}';
-    }
+
 }

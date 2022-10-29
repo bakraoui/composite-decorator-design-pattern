@@ -5,7 +5,6 @@ public class TrajectBuilder {
 
     private Traject traject = new Traject();
 
-
     public  TrajectBuilder setDepartPoint(String departPoint) {
         traject.setDepartPoint(departPoint);
         return this;

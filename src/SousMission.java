@@ -3,6 +3,7 @@ import java.util.List;
 public class SousMission extends Mission{
     private List<Mission> missions;
 
+
     public SousMission(List<Mission> missions) {
         this.missions = missions;
     }
@@ -23,4 +24,17 @@ public class SousMission extends Mission{
     public int cout() {
         return  missions.stream().reduce(0, (sum, mission) -> sum + mission.cout(), Integer::sum);
     }
+
+    @Override
+    public String toString() {
+        return "SousMission{" +
+                "missions=" + missions +
+                '}';
+    }
+
+    @Override
+    public void view() {
+        System.out.println(this.toString());
+    }
+
 }

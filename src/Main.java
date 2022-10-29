@@ -43,15 +43,15 @@ public class Main {
         * create mission with 3 trajectories and one sousMission
         * print the consumption of our mission
         * */
-        Mission mission = new SousMission(List.of(
-                trajectory4, trajectory5, trajectory6, sousMission
-        ));
+        Mission mission = new SousMission(List.of(trajectory4, trajectory5, trajectory6, sousMission ));
 
         /*
         * expected value :
         * 10 + 11 + 12 + 13 + 14 + 15 = 75
         * */
         System.out.println(mission.cout());
+
+        mission.view();
 
 
 
