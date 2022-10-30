@@ -2,12 +2,12 @@ package decorator;
 
 public class Vol extends Decorator{
 
-    public Vol(Assurance assurance) {
-        super(assurance);
+    public Vol(Assurance assurance, int fees) {
+        super(assurance, fees);
     }
 
     @Override
     int getFees() {
-        return assurance.getFees() + 100;
+        return assurance.getFees() + this.fees;
     }
 }
