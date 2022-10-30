@@ -1,3 +1,5 @@
+package composite;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +55,7 @@ public class Traject extends Mission{
 
     @Override
     public String toString() {
-        return "Traject{" +
+        return "composite.Traject{" +
                 "departPoint='" + departPoint + '\'' +
                 ", arrivalPoint='" + arrivalPoint + '\'' +
                 ", departDate=" + departDate +

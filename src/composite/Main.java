@@ -1,3 +1,5 @@
+package composite;
+
 import java.util.List;
 
 public class Main {
@@ -8,7 +10,7 @@ public class Main {
 
 
         /*
-        * Bon to use for trajectories and missions
+        * composite.Bon to use for trajectories and missions
         * */
         Bon b1 = new Bon(10);
         Bon b2 = new Bon(11);

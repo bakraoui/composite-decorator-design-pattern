@@ -1,3 +1,5 @@
+package composite;
+
 import java.util.List;
 
 public class SousMission extends Mission{
@@ -27,7 +29,7 @@ public class SousMission extends Mission{
 
     @Override
     public String toString() {
-        return "SousMission{" +
+        return "composite.SousMission{" +
                 "missions=" + missions +
                 '}';
     }
